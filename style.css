@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "NetflixSans";
+    src: url("./ressources/netflix-sans-font/NetflixSans-Regular.woff2") format("woff2");
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    /*font-family: "NetflixSans", Verdana, Tahoma;*/
+}
+
+body{
+    background-color: #313131;
+}
+
+h2, h3{
+    font-weight: 700;
+}
+
+li{
+    list-style-type: none;
+}
+
+/*________________NAVBAR__*/
+
+nav div i{
+    padding:1em;
+}
+
+
+/*________________SPOTLIGHT__*/
+.row-spotlight{
+    width:100vw;
+    height:50vh;
+    margin-top: 72px;
+    background-image: url("./ressources/spotlight-img.jpg");
+    background-repeat: no-repeat;
+
+}
+
+.row-spotlight img{
+    padding:0;
+    margin:0;
+    mask-image: linear-gradient(to bottom, rgb(66, 66, 66), rgba(0, 0, 0, 0));
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+.col-spotlight{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 2em;
+    padding:1em;
+    height:fit-content;
+}
+
+.row-spotlight .spotlight-title{
+    color:#E50914;
+    font-size:3em;
+    width:75%;
+}
+
+.row-spotlight .spotlight-title2{
+    color:#fbfbfb;
+    font-size:3em;
+    width:75%;
+
+}
+
+.row-spotlight li.spotlight-button{
+    display: inline;
+    text-align: center;
+    padding: 2px ;
+}
+
+.rotated{
+    display: inline-block;
+    transform: rotate(90deg);
+
+}
+.col-spotlight-right {
+background-color: rgba(0, 0, 0, 0.2);
+color:#ffffff;
+font-size:1.5em;
+height: fit-content;
+margin: auto 0 2em 0;
+
+}
+
+.col-spotlight-right i{
+    padding:1em;
+    display:inline;
+}
+.col-spotlight-right p{
+    display:inline;
+}
+/*________________CAROUSELS__*/
+
+.carousel-container{
+    margin:1.5em 2em;
+}
+
+.carousel-container h2{
+    color:#ffffff;
+}
+
+.row-carousel{
+    flex-wrap: nowrap;
+    overflow-x:auto;
+    /*width:100%;*/
+    height:fit-content;
+    padding:2em;
+}
+
+.row-carousel img{
+    max-width:250px;
+    max-height:200px;
+    transition: transform .2s;
+
+}
+.row-carousel img:hover{
+    transform: scale(1.5);
+}
+
+
+/*________________FOOTER__*/
+
+.row-socials{
+
+    color:#ffffff;
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.row-footer{
+
+    color:#ffffff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.row-socials div i{
+    margin-right:0.5em;
+
+}
+
+.row-footer div ul{
+    margin:0;
+    padding:0;
+}
+
+.row-footer div ul li{
+    margin-top:0.5em;
+}
+
+/*________________MODAL__*/
+
+.modal-content{
+    background-image: url("./ressources/spotlight-img.jpg");
+    background-repeat: no-repeat;
+}
+
+.modal-body{
+    padding:0;
+    /*background-color: #464646;*/
+}
+.modal-fondgris{
+    background-color: #464646;
+    padding-bottom:2em;
+
+}
+
+.modal-head{
+    width:auto;
+    margin:3em 2em 1em 2em;
+
+}
+
+.modal-head button{
+    padding:0.5em;
+    background-color: #313131;
+    border-radius: 50%;
+}
+
+.modal-title{
+    font-weight: bold;
+}
+
+.modal-icon-resize{
+    /*margin-top:1em;*/
+    font-size: 2rem;
+}
+
+.modal-list li{
+    display:inline;
+    width:fit-content;
+    /*vertical-align: bottom;*/
+}
+
+.modal-film-description{
+    background-color: #464646;
+    color:#ffffff;
+    width:100%;
+}
+
+.modal-film-description p{
+    display:inline-block;
+    margin-left:0.5em;
+    margin-top:1em;
+}
+
+p.desc-content{
+    margin:1em;
+}
+
+.modal-film-description p.desc-appreciation-percent, p.similar-movie-card-reviews{
+    color:#129820;
+    
+}
+.modal-film-description p.desc-appreciation-age{
+    border:1px solid #ffffff;
+    padding:0 0.5em;
+}
+.modal-film-description blockquote{
+    display:inline-block;
+    border:1px solid #ffffff;
+}
+
+h3.desc-title{
+    margin-left:2em;
+}
+
+p.desc-prod{
+    margin-top:0.5em;
+}
+
+span.desc-prod-grey{
+    color:#242424;
+}
+
+.modal-background-separator{
+    width:100%;
+    background: linear-gradient(0deg, rgba(70,70,70,1) 0%, rgba(70,70,70,0) 100%);
+}
+
+.modal-footer{
+    background-color: #464646;
+}
+
+/*__________________*/
+
+.modal-film{
+    background-color: #464646;
+}
+.modal-film h2{
+    color:#ffffff;
+    width:auto;
+    margin:1em;
+}
+
+.similar-movies{
+    justify-content: space-around;
+}
+
+.similar-movie-card{
+    border-radius: 5px;
+    background-color: #5d5d5d;
+}
+
+.similar-movie-card img{
+    border-radius: 5px;
+    width:100%;
+}
+
+p.similar-movie-card-reviews {
+    margin:0.5em;
+}
+
+p.similar-movie-card-description{
+    color:#ffffff;
+    margin:0.5em;
+}
+/*_________________________________HOVERS*/
+
+
+img.hovered{
+    border-radius: 50%;
+}

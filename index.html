@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetStrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!--_______________________________NAVBAR-->
+        <div class="row">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="./ressources/netflix_official_logo_icon_168085.png" alt="NetStrape" srcset=""> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="./series.html">Séries</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Catégories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Policier</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Émotion</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link disabled">Contenu 18+</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Titre, acteurs, ..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                    </form>
+                    </div>
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-person"></i>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!--_______________________________SPOTLIGHT-->
+        <div class="row row-spotlight justify-content-between">
+            <div class="col-3 offset-1 col-spotlight">
+                <div class="spotlight-title">
+                    <h2>TITRE DU FLIME</h2>
+                </div>
+                <div class="spotlight-title2">
+                    <h3>SOUS-TITRE DU FLIME !</h3>
+                </div>
+                <ul class="spotlight-button-list">
+                    <li class="spotlight-button"> 
+                        <button type="button" class="btn btn-light">
+                            <i class="bi bi-triangle-fill rotated"></i> Lecture</button>
+                    </li>
+                    <li class="spotlight-button">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#spotlightmodal">
+                            <i class="bi bi-info-circle-fill"></i> Plus d'infos</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2 col-spotlight-right">
+                <i class="bi bi-volume-mute-fill"></i>
+                <p><b>16+</b></p>
+            </div>
+            <!--<img src="./ressources/spotlight-img.jpg" class="img-fluid"/>-->
+        </div>
+    </div>
+        <!--_______________________________CAROUSELS-->
+    <div class="containter-fluid carousel-container">
+        <h2>Titres les plus populaires</h2>
+        <div class="row gx-2 row-carousel">
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+            <img data-bs-toggle="modal" data-bs-target="#moviemodal" src="http://placekitten.com/250/100" alt="kitty"/>
+        </div>
+    </div>
+
+    <div class="containter-fluid carousel-container">
+        <h2>Reprendre avec le profil de D@rK_@nG3L_420</h2>
+        <div class="row gx-2 row-carousel">
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+        </div>
+    </div>
+
+    <div class="containter-fluid carousel-container">
+        <h2>Top Dix an Fransse</h2>
+        <div class="row gx-2 row-carousel">
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+            <img src="http://placekitten.com/250/100" alt="kitty"/>
+        </div>
+    </div>
+        <!--_______________________________FOOTER-->
+    <div class="row row-socials">
+        <div class="col-2 offset-2">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+    </div>
+
+    <footer class="row row-footer">
+        <div class="col-2 offset-2">
+            <ul>
+                <li>FAQ</li>
+                <li>Investor Relations</li>
+                <li>Buy Gift Cards</li>
+                <li>Cookie Preferences</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li>Legal Guarantee</li>
+                <li>Help Center</li>
+                <li>Jobs</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li>Account</li>
+                <li>Netflix Shop</li>
+                <li>Terms of Use</li>
+            </ul>
+        </div>
+        <div class="col-2">
+            <ul>
+                <li>Contact Us</li>
+                <li>Only on Netflix</li>
+                <li>Media Center</li>
+            </ul>
+        </div>
+    </footer>
+
+        <!--_______________________________MODALE spotlight-->
+    <div class="modal fade" id="spotlightmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="row modal-head justify-content-between">
+                <div class="col-4"><h1 class="modal-title fs-5" id="exampleModalLabel">Titre du flime</h1></div>
+                <div class="col-1"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            </div>
+            <div class="modal-body">
+                <ul class="row modal-list">
+                    <li class="modal-list-item">
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-triangle-fill rotated"></i> Lecture</button>
+                    </li>
+                    <li class="modal-list-item"><i class="bi bi-bookmark-plus-fill modal-icon-resize"></i></li>
+                    <li class="modal-list-item"><i class="bi bi-hand-thumbs-up-fill modal-icon-resize"></i></li>       
+                </ul>
+
+                <div class="row gx-0 modal-background-separator"><br/><br/></div>
+                <div class="container modal-fondgris">
+                <div class="row gx-0 modal-film-description">
+                    <div class="col-8">
+                        <p class="desc-appreciation-percent">96% des internautes ont aimé</p>
+                        <p class="desc-appreciation-date">2023</p>
+                        <p class="desc-appreciation-age">13+</p>
+                        <p class="desc-appreciation-seasons">2 saisons</p>
+                        <blockquote>HD</blockquote>
+                        <h3 class="desc-title">Lorem ipsum dolor sit amet !</h3>
+                        <p class="desc-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum metus lorem, nec dignissim eros rutrum et. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce eget auctor erat. Cras euismod aliquet ante, quis pulvinar metus interdum sed...</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="desc-prod"><span class="desc-prod-grey">Distribution : </span>Tan France, Gigi Hadid, Alexa Chung</p>
+                        <p class="desc-prod"><span class="desc-prod-grey">Genre : </span>Production habituelle, sans surprises, sans âme, d'une nullité hollywoodienne.</p>
+                        <p class="desc-prod"><span class="desc-prod-grey">Ce programme est : </span>une colossale farce.</p>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--_______________________________MODALE_movie-->
+      <div class="modal fade" id="moviemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="row modal-head justify-content-between">
+                <div class="col-4"><h1 class="modal-title fs-5" id="exampleModalLabel">Titre du flime</h1></div>
+                <div class="col-1"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            </div>
+            <div class="modal-body">
+                <ul class="row modal-list">
+                    <li class="modal-list-item">
+                    <button type="button" class="btn btn-dark">
+                        <i class="bi bi-triangle-fill rotated"></i> Lecture</button>
+                    </li>
+                    <li class="modal-list-item"><i class="bi bi-bookmark-plus-fill modal-icon-resize"></i></li>
+                    <li class="modal-list-item"><i class="bi bi-hand-thumbs-up-fill modal-icon-resize"></i></li>       
+                </ul>
+
+                <div class="row gx-0 modal-background-separator"><br/><br/></div>
+
+                <div class="container modal-fondgris">
+                    <div class="row gx-0 modal-film-description">
+                        <div class="col-8">
+                            <p class="desc-appreciation-percent">96% des internautes ont aimé</p>
+                            <p class="desc-appreciation-date">2023</p>
+                            <p class="desc-appreciation-age">13+</p>
+                            <p class="desc-appreciation-seasons">2 saisons</p>
+                            <blockquote>HD</blockquote>
+                            <h3 class="desc-title">Lorem ipsum dolor sit amet !</h3>
+                            <p class="desc-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fermentum metus lorem, nec dignissim eros rutrum et. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce eget auctor erat. Cras euismod aliquet ante, quis pulvinar metus interdum sed...</p>
+                        </div>
+                        <div class="col-4">
+                            <p class="desc-prod"><span class="desc-prod-grey">Distribution : </span>Tan France, Gigi Hadid, Alexa Chung</p>
+                            <p class="desc-prod"><span class="desc-prod-grey">Genre : </span>Production habituelle, sans surprises, sans âme, d'une nullité hollywoodienne.</p>
+                            <p class="desc-prod"><span class="desc-prod-grey">Ce programme est : </span>une colossale farce.</p>
+
+                        </div>
+                    </div>
+                    <div class="row gx-0 modal-film ">
+                        <h2>Titres similaires</h2>
+                    </div>
+                    <div class="row gx-1 similar-movies">
+                        <div class="col-3 p-3 similar-movie-card">
+                            <img src="https://placekitten.com/300/180" alt="kitty"/>
+                            <p class="similar-movie-card-reviews">Recommandé à 69%</p>
+                            <p class="similar-movie-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius justo lorem, et fermentum ex iaculis vel. Morbi porta libero sagittis odio fringilla varius. Praesent sed tellus turpis. </p>
+                        </div>
+                        <div class="col-3 p-3 similar-movie-card">
+                            <img src="https://placekitten.com/300/180" alt="kitty"/>
+                            <p class="similar-movie-card-reviews">Recommandé à 69%</p>
+                            <p class="similar-movie-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius justo lorem, et fermentum ex iaculis vel. Morbi porta libero sagittis odio fringilla varius. Praesent sed tellus turpis. </p>
+                        </div>
+                        <div class="col-3 p-3 similar-movie-card">
+                            <img src="https://placekitten.com/300/180" alt="kitty"/>
+                            <p class="similar-movie-card-reviews">Recommandé à 69%</p>
+                            <p class="similar-movie-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius justo lorem, et fermentum ex iaculis vel. Morbi porta libero sagittis odio fringilla varius. Praesent sed tellus turpis. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--<script src="./script.js"></script>-->
+</body>
+</html>

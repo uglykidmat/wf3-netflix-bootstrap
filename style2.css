@@ -1,0 +1,147 @@
+*{
+    color:#fcfcfc;
+    font-family: 'Poppins', sans-serif;
+    /*font-family: "NetflixSans", Verdana, Tahoma;*/
+    
+}
+
+body{
+    background-color:#313131;
+}
+
+.body-main{
+    background-image: url('https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3071&q=80') ;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode:overlay;
+}
+
+.row-title{
+    padding-top:72px;
+}
+
+h1{
+    margin-top: 0.5em;
+}
+
+/*__________________*/
+.movie-cards-row{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-top:3em;
+    padding-bottom:2.5em;
+}
+
+.movie-card{
+    transition: transform .2s ease-in;
+}
+
+.movie-card:hover{
+   transform: scale(1.15);
+}
+
+.movie-cards-container{
+    max-width:100vw;
+    margin:0;
+    padding:0;
+}
+
+.card-container{
+    border-radius: 1em;
+    background-color: rgba(41, 41, 41, 0.6);
+    /*background: red;*/
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+      align-items: center;
+    /*  width: 69%;
+      height: 75%;*/
+      /*border: 2px solid red;*/
+      box-shadow: 2px 5px 15px 1px #0000004e;
+      margin-bottom:2em;
+  }
+
+.poster-container{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    max-height: 341px;
+}
+
+/*
+.poster{*/
+   /* border: 2px solid green;*/
+    /*-webkit-filter: contrast(120%);
+    -webkit-filter: brightness(150%);
+    -webkit-filter: saturate(2);*/
+    
+   /* transform: scale(1.5);
+    transform-origin: 70% 19%;*/
+    /*width: 100%;
+    height: 100%;
+    background-image: url('https://pitchfork-cdn.s3.amazonaws.com/content/ST-Vinyl-Vol-1-Front-Cover_3000.jpg') ;
+    background-size: cover;
+    background-position: 50% 50%;*/
+    /*background-repeat: no-repeat;*/
+    /*box-shadow: 2px 5px 15px 1px #04060a;*/
+  /*}*/
+
+ /*.poster img{
+    position:absolute;
+    top:50%;
+}*/
+
+.card-description{
+    margin:1em;
+}
+
+.card-description .logo-container{
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    }
+
+.card-description .logo-container .logo{
+    transform: scale(1.2);
+    width: 35%;
+    height: 100%;
+    background-image: url('http://www.brandemia.org/sites/default/files/sites/default/files/logo_netflix_antes.jpg');
+    background-size: cover;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    }
+
+p.rating span i{
+    color:#aaaa14;
+}
+
+
+/*________________________MODAL-BODY*/
+.modal-series-dialog{
+    width:fit-content;
+    height:fit-content;
+    background-color:#313131;
+    
+}
+
+.modal-series-body{
+    padding:0;
+    
+
+}
+
+.modal-series-body iframe{
+    background-clip: border-box;
+    min-width:560px;
+    min-height:315px;
+}
+
+.modal-series-body p{
+    color:#fcfcfc;
+    margin:1em;
+}
